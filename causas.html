@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Causas y Efectos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0e7ff;
+            color: #1e3a8a;
+        }
+
+        td {
+            background-color: #f9fafb;
+        }
+
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+            }
+
+            td {
+                border: none;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            td::before {
+                position: absolute;
+                left: 0;
+                width: 45%;
+                padding-left: 1rem;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+
+            td:nth-of-type(1)::before { content: "Causa"; }
+            td:nth-of-type(2)::before { content: "Efecto"; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Causas y Efectos en la Salud Mental</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="causas.html">Causas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="historias.html">Historias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tabla de causas y efectos comunes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Causa</th>
+                        <th>Efecto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Exceso de tareas y presión académica</td>
+                        <td>Estrés, ansiedad y agotamiento</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de apoyo emocional</td>
+                        <td>Sentimientos de soledad o depresión</td>
+                    </tr>
+                    <tr>
+                        <td>Problemas financieros</td>
+                        <td>Inseguridad, ansiedad, distracción</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de sueño</td>
+                        <td>Irritabilidad, bajo rendimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Autoexigencia extrema</td>
+                        <td>Burnout, insatisfacción personal</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Estudiante estresado">
+        </section>
+
+        <section>
+            <h2>¿Cómo prevenirlo?</h2>
+            <p>Una buena gestión del tiempo, apoyo emocional y hábitos saludables pueden reducir significativamente los riesgos. Buscar ayuda no es debilidad, es valentía.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Roberto Feliciano – Proyecto COMP 2025</p>
+    </footer>
+</body>
+</html>
